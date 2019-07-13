@@ -20,25 +20,6 @@
 
     }
 
-    // get ID
-    $id = mysqli_real_escape_string($conn, $_GET['id']);
-
-    // Create Query
-    $query = 'SELECT * FROM posts WHERE id = ' . $id;
-
-    // Get Result
-    $result = mysqli_query($conn, $query);
-
-    // Fetch Data
-    $post = mysqli_fetch_assoc($result);
-    //        var_dump($posts);
-
-    // Free Result
-    mysqli_free_result($result);
-
-    // Close Connection
-    mysqli_close($conn);
-
 
 ?>
 
